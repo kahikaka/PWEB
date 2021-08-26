@@ -1,3 +1,3 @@
-git add *
-git commit -m "string"
-git push -u origin master
+git add * <br>
+git commit -m "string" <br>
+git push -u origin master <br>
