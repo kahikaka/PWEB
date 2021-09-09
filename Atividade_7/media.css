@@ -1,0 +1,35 @@
+.body{
+    background-color: rgb(253, 252, 252);
+    font-size: 1.2em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.h1{
+    text-align: center;
+}
+.nome{
+    margin: 15px 25px;
+    text-align: left;
+}
+.nota1, .nota2, .nota3{
+    margin: 15px 25px;
+    text-align: left;
+}
+.result{
+   border: thin silver solid;
+   width: 30%;
+   position:flex;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 5px;
+   align-content: center;
+   text-align: center;
+}
+.resultado{
+    margin-top: 20px;
+    text-align: left;
+}
+
