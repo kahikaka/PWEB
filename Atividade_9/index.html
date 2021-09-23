@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pesquisa</title>
+
+</head>
+
+<body>
+    <script>
+
+        var i, idade, opniao, contaidadeotimo = 0, quantpessimo = 0, contquantpessimo = 0, quantbom = 0, contquantbom = 0, contquantregular = 0,
+        prctbom, prctotimo, contquantotimo = 0, mediaidade = 0, quantmulh = 0, quanthom = 0, menoridade = 0, maioridade = 0, contquantidade= 0;
+
+        for(i = 1; i <= 45; i++) {
+            idade = parseInt(prompt("Sua idade["+i+"]:"));
+            opniao = prompt("Escolha sua opinião: ótimo - 4, bom - 3, regular - 2, péssimo - 1:");
+            sexo = prompt("Sexo: M ou F:");
+
+            if(opniao == 4) {
+                prctotimo += opniao;
+                contquantotimo++;
+            } if(opniao == 1) {
+                quantpessimo += opniao;
+                contquantpessimo++;
+            } if(opniao == 3) {
+                quantbom += opniao;
+                contquantbom++;
+            } if(opniao == 2) {
+                contquantregular++;
+            } if(sexo == 'M') {                    
+                quanthom++;
+            } if (sexo == 'F') {
+                quantmulh++;
+            } if(i == 1) {
+                menoridade = idade;
+            } if(idade > maioridade) { 
+                maioridade = idade;
+            } if(idade < menoridade) { 
+                menoridade = idade;
+            } if(idade) {
+                contquantidade += idade;
+            }
+        }
+
+        mediaidade = contquantidade/45;
+        prctbom = (contquantbom * 100)/45;
+        prctotimo = (contquantotimo * 100)/45;
+
+        
+        alert("Quantidade de pessoas que responderam péssimo é: "+contquantpessimo);
+        alert("Porcentagem de pessoas que responderam bom: "+prctbom);
+        alert("Porcentagem de pessoas que responderam ótimo: "+prctotimo);
+        alert("Média de idade das pessoas que responderam a pesquisa: "+mediaidade);
+        alert("Total de homens: "+quanthom);
+        alert("Total de mulheres: "+quantmulh);
+        alert("Idade da pessoa mais velha é: "+maioridade); 
+        alert("Idade da pessoa mais nova é: "+menoridade);
+
+</script>
+</body>
+
+</html>
