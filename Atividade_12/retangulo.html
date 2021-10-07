@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retangulo</title>
+</head>
+<body>
+    <script>
+        function Retangulo() {
+			var base; 
+			var altura;
+            var area;
+
+			this.setBase = function (base) {
+				this.base = base;
+			}
+
+			this.setAltura = function (altura) {
+				this.altura = altura;
+			}
+
+			this.getBase = function () {
+				return this.base;
+			} 
+
+			this.getAltura = function () {
+				return this.altura;
+			}
+           
+			this.mostraArea = function () {
+                area = this.base * this.altura;
+                alert("Área do retângulo: " + area);
+               
+			}
+		}
+
+		var objRetangulo = new Retangulo();
+
+		objRetangulo.setBase(20);
+		objRetangulo.setAltura(60);
+		objRetangulo.mostraArea();
+    </script>
+
+</body>
+</html>

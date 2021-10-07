@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conta</title>
+</head>
+
+<body>
+    <script>
+        function Conta() {
+            var nomeCorrentista;
+            var banco;
+            var numConta;
+            var saldo;
+
+            this.setNome = (value) => {
+                nomeCorrentista = value;
+            }
+            this.getNome = () => {
+                return nomeCorrentista;
+            }
+
+            this.setBanco = (value) => {
+                banco = value;
+            }
+            this.getBanco = () => {
+                return banco;
+            }
+
+            this.setNumConta = (value) => {
+                numConta = value;
+            }
+            this.getNumConta = () => {
+                return numConta;
+            }
+
+            this.setSaldo = (value) => {
+                saldo = value;
+            }
+            this.getSaldo = () => {
+                return saldo;
+            }
+
+        }
+        function ContaCorrente() {
+            var saldoEspecial;
+
+            this.getSaldoEspecial = () => {
+                return saldoEspecial;
+            }
+            this.setSaldoEspecial = (value) => {
+                saldoEspecial = value;
+            }
+        }
+        function ContaPoupanca() {
+            var juros;
+            var dataVencimento;
+
+            this.getJuros = () => {
+                return juros;
+            }
+            this.setJuros = (value) => {
+                juros = value;
+            }
+            this.getDataVencimento = () => {
+                return dataVencimento;
+            }
+            this.setDataVencimento = (value) => {
+                dataVencimento = value;
+            }
+
+        }
+
+        ContaCorrente.prototype = new Conta();
+        ContaPoupanca.prototype = new Conta();
+
+        objContaCorrente = new ContaCorrente();
+        objContaPoupanca = new ContaPoupanca();
+
+
+
+        objContaCorrente.setNome("Camila Massena");
+        objContaCorrente.setBanco("Itaú");
+        objContaCorrente.setNumConta("2045");
+        objContaCorrente.setSaldo("1.254");
+        objContaCorrente.setSaldoEspecial("500.000");
+        
+        objContaPoupanca.setNome("Lívia Massena");
+        objContaPoupanca.setBanco("Brasil");
+        objContaPoupanca.setNumConta("6505");
+        objContaPoupanca.setSaldo("5.000");
+        objContaPoupanca.setJuros("5%");  
+        objContaPoupanca.setDataVencimento("25/12/2021");     
+           
+
+           
+        alert("Conta Corrente"+ 
+         '\n' + 'Nome '+ objContaCorrente.getNome() +
+         '\n' + 'Banco ' + objContaCorrente.getBanco() +
+         '\n' + 'Número da conta ' + objContaCorrente.getNumConta() + 
+         '\n' + 'Saldo ' + objContaCorrente.getSaldo() +
+         '\n' + 'Saldo Especial ' + objContaCorrente.getSaldoEspecial());
+
+        alert("Conta Poupança"+
+        '\n' + 'Nome '+ objContaPoupanca.getNome() + 
+        '\n' + 'Banco ' + objContaPoupanca.getBanco() + 
+        '\n' + 'Número da conta ' + objContaPoupanca.getNumConta() + 
+        '\n' + 'Saldo ' + objContaPoupanca.getSaldo() +
+        '\n' + 'Taxa de juros ' + objContaPoupanca.getJuros() +
+        '\n' + 'Data Vencimento ' + objContaPoupanca.getDataVencimento());
+
+    </script>
+</body>
+
+</html>
