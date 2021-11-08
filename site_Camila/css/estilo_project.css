@@ -1,0 +1,94 @@
+@font-face {
+	font-family: "Camila";
+	src: url("../fontes/Greyfox.otf");
+}
+body, html {
+    height: 100%;
+    width: 100%;
+    color: #8700f5;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background-attachment: scroll;
+    font-family: 'Camila';
+	font-size: 60px;
+	line-height: 30px;
+}
+.titulo {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-top: 70px;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: 'Camila';
+	font-size: 50px;
+	line-height: 30px;
+    font-weight: bold;    
+}
+.coworking {
+    display: block;
+    float: right;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-top: 20px;    
+}
+.logo-sites {
+    position: relative;
+    display: inline;
+}
+.texto {
+    position: relative;
+    width: 80%;
+    display: inline;
+    float: right;
+    text-align: justify;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    text-indent: 1.5em;
+    line-height: 25px;
+    font-family: 'Camila';
+	font-size: 30px;
+	line-height: 30px;
+}
+.titulo-projeto{
+    width: 100%;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    float: left;
+    font-weight: bold;
+    text-indent: 0;
+}
+.salesforce{
+    display: block;
+    float: left;
+}
+.salesforce .texto{
+    margin-right: 50px;
+    margin-left: 20px;
+    float: left;
+    padding-left: 0;
+}
+.salesforce .titulo-projeto{
+    text-align: right;
+}
+@media (max-width: 675px){
+    .logo-sites {
+        display: block;
+        float: none;
+    }
+    .texto {
+        display: block;
+        float: none;
+        text-align: justify;
+    }
+   
+    .salesforce .texto{
+        margin-right: 0;
+        margin-left: 0;
+        float: none;
+        padding-left: 0;
+    }
+}

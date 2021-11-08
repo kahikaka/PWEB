@@ -1,0 +1,109 @@
+@font-face {
+	font-family: "Camila";
+	src: url("../fontes/Greyfox.otf");
+}
+body, html {
+    min-width: 445px;
+    margin: 0;
+    font: 16px "Lato", sans-serif;
+    font-family: 'Camila';
+	font-size: 20px;
+	
+}
+.navbar{
+    min-width: 445px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #77131d;
+    cursor: default;
+    font: 250px;
+}
+.img-logo {
+    margin-left: 10px;
+    margin-top: 2px;
+    float: left;
+}
+.menu {
+    text-decoration: none;
+    display: inline;
+    float:left;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 2px 10px;
+    margin: 0;      
+    margin-top: -4px;
+}
+.barra {
+    border-right: #46090f 1px solid;
+}
+.primeiro {
+    padding-left: 20px;
+}
+.menu:hover {
+    background-color: #46090f;
+    color: white;
+}
+.menu:visited{
+    text-decoration: none;
+}
+.wid-baixa{
+   display: none;
+   float: right;
+   margin-right: 10px;
+   width: 80%;
+}
+.btn-menu, .btn-sair {
+    margin-top: 5px;
+    width: 40px;
+    height: 40px;
+    float: right;
+    background-color: #77131d;    
+    background-size: 40px;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.btn-menu {
+    display: inline;
+    background-image: url(../icon/menu.png);
+}
+.btn-sair{
+    display: none;
+    background-image: url(../icon/menu.png);
+}
+.cont-wid-baixa{
+    display: none;    
+    text-align: right;
+    float: right;
+}
+.menu-drop {
+    display: block;
+    width: 400px;
+    margin-right: 0;
+    padding: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-decoration: none;
+}
+.menu-drop:hover{
+    background-color: #46090f;
+    color:white;
+}
+.cont-wid-baixa .baixa{
+    text-align: right;
+}
+a{
+    color: white;
+}
+@media (max-width: 675px){
+    .wid-alta{
+        display: none;
+    }
+    .wid-baixa{
+        display: block;
+    }
+}
